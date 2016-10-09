@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SocketIO Chat</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="container">
+	<ul id="messages"></ul>
+	<div>
+		<input type="text" placeholder="Yourname", id="nameInput">
+		<input type="button" value="OK" id="nameButton">
+	</div>
+	<div>
+		<textarea id="text"></textarea>
+		<input type="button" value="Send" id="textSubmit">
+	</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>

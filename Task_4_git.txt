@@ -1,0 +1,41 @@
+##### 0 #####
+$ mkdir TestRepo
+$ cd TestRepo/
+$ git init
+# add file "1.txt" to TestRepo folder
+$ git add -A && git commit -m '0001: Init commit (add first file to repository)'
+# add file "2.txt" to TestRepo folder
+$ git add -A && git commit -m '0002: Second commit (add 2.txt)'
+$ git branch develop
+$ git checkout develop
+# add file "3.txt" to TestRepo folder (develop)
+$ git add 3.txt && git commit -m '0003: Commit (add 3.txt)'
+$ git add 3.txt && git commit -m '0004: Commit (add modify 3.txt)'
+$ git branch develop-feature1 && git checkout develop-feature1
+$ git add -A && git commit -m '0005: Commit (add 4.txt)'
+$ git add -A && git commit -m '0006: Commit (modify 3.txt)'
+$ git branch develop-feature2 && git checkout develop-feature2
+$ git add -A && git commit -m '0007: Commit (add 5.txt)'
+$ git add -A && git commit -m '0008: Commit (modify 3.txt)'
+$ git checkout develop && git merge develop-feature1
+$ git checkout master && git merge develop && git tag release1
+$ git branch -D develop-feature2 && git push origin --delete develop-feature2
+
+##### 1 #####
+$ git log --graph --decorate develop-feature1 --no-merges develop.. master.. --format=format:'%s - %an' --since='3 hours ago'
+$ git log --graph --decorate master develop --pretty="format:%s - %an - %aD" --grep='3.txt' --date-order
+
+##### 2 #####
+$ git checkout develop && git cherry-pick eb042098a5 && git push develop
+
+##### 3 #####
+Порядок действий:
+1) Копируем Хеш коммита который идет перед тем коммитом который нужно отредактировать. Если мы не хотим возится с хешом, а знаем точное количество коммитов от HEAD, то можем использовать конструкцию HEAD~3 (3 коммита назад от головы).
+2) Выполняем команду $ git rebase -i <скопированный хеш коммита> или, например, HEAD~3
+3) Откроется редактор в котором напротив коммитов которые необходимо изменить, меняем слово pick на reword 
+4) Далее выполняем комманжу сохранения изменений :wq
+5) Откроется окно в котором мы меняем текст коммита которому выше сыставляли изменения.
+6) Снова сохраняем :wq
+7) Отправляем измениения на сервер (форсированно) $ git push -f develop-feature3
+8) Вводим пароль.
+9) Profit. 

@@ -1,0 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Marck+Script';
+
+.user-info-component{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.delete-user-info-button {
+    background: #ff3c00;
+    background-image: -webkit-linear-gradient(top, #ff3c00, #e01010);
+    background-image: -moz-linear-gradient(top, #ff3c00, #e01010);
+    background-image: -ms-linear-gradient(top, #ff3c00, #e01010);
+    background-image: -o-linear-gradient(top, #ff3c00, #e01010);
+    background-image: linear-gradient(to bottom, #ff3c00, #e01010);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.delete-user-info-button:hover {
+    background: #ff0000;
+    background-image: -webkit-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -moz-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -ms-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -o-linear-gradient(top, #ff0000, #ff0000);
+    background-image: linear-gradient(to bottom, #ff0000, #ff0000);
+    text-decoration: none;
+}

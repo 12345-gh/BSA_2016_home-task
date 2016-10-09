@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 370px;
+    position: relative;
+    left: 50%;
+    margin-left: -160px;
+    font: 13px Helvetica, Arial;
+
+    background-image: linear-gradient(90deg, rgb(46, 204, 113) 25%, rgb(39, 174, 96) 100%);
+    background-image: -moz-linear-gradient(left, rgb(46, 204, 113) 25%, rgb(39, 174, 96) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(46, 204, 113) 25%, rgb(39, 174, 96) 100%);
+    background-image: -o-linear-gradient(left, rgb(46, 204, 113) 25%, rgb(39, 174, 96) 100%);
+    background-image: -ms-linear-gradient(left, rgb(46, 204, 113) 25%, rgb(39, 174, 96) 100%);
+}
+
+#nameInput{
+    width: 300px;
+    margin: 3px;
+}
+
+textarea{
+    width: 300px;
+    margin: 3px;
+}
+
+input[type="button"]{
+    width:50px;
+}
+
+li{
+    list-style-type: none;
+    text-align: right;
+    margin: 2px 3px;
+    background-image: linear-gradient(90deg, rgb(157, 157, 157) 25%, rgb(95, 124, 138) 100%);
+    background-image: -moz-linear-gradient(left, rgb(157, 157, 157) 25%, rgb(95, 124, 138) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(157, 157, 157) 25%, rgb(95, 124, 138) 100%);
+    background-image: -o-linear-gradient(left, rgb(157, 157, 157) 25%, rgb(95, 124, 138) 100%);
+    background-image: -ms-linear-gradient(left, rgb(157, 157, 157) 25%, rgb(95, 124, 138) 100%);
+}
+
+li.chat-masseges{
+    text-align: right;
+    background-image: linear-gradient(90deg, rgb(52, 152, 219) 25%, rgb(41, 128, 185) 100%);
+    background-image: -moz-linear-gradient(left, rgb(52, 152, 219) 25%, rgb(41, 128, 185) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(52, 152, 219) 25%, rgb(41, 128, 185) 100%);
+    background-image: -o-linear-gradient(left, rgb(52, 152, 219) 25%, rgb(41, 128, 185) 100%);
+    background-image: -ms-linear-gradient(left, rgb(52, 152, 219) 25%, rgb(41, 128, 185) 100%);
+}
+
+li.user-masseges{
+    text-align: left;
+    background-image: linear-gradient(90deg, rgb(241, 196, 15) 25%, rgb(243, 156, 18) 100%);
+    background-image: -moz-linear-gradient(left, rgb(241, 196, 15) 25%, rgb(243, 156, 18) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(241, 196, 15) 25%, rgb(243, 156, 18) 100%);
+    background-image: -o-linear-gradient(left, rgb(241, 196, 15) 25%, rgb(243, 156, 18) 100%);
+    background-image: -ms-linear-gradient(left, rgb(241, 196, 15) 25%, rgb(243, 156, 18) 100%);
+}
+
+.hide{
+    display: none;
+}
